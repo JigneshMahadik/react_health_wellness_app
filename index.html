@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Wellness</title>
+    
+    <!-- React libraries -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel standalone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+            // Header Section
+            let header = <header>
+                            <div id="head">
+                                <h1>Health Wellness</h1>
+                                <p>Massage Therapy</p>
+                            </div>
+                            <navbar>
+                                <p>Home</p>
+                                <p id="menu1">About</p>
+                                <p id="menu2">Services</p>
+                                <p id="menu3">F&Q</p>
+                                <p id="menu4">Contact</p>
+                                <img src="stack.png" id="icon_stack"/>
+                            </navbar>
+                        </header>
+
+            // Body Section
+            let body = <div>
+                            <div id="banner">
+                                <img src="bannerPic.jpeg"/>
+                            </div>
+                            <div id="body1">
+                                <h1>Think Health, Think Massage.</h1>
+                                <p id="body1_p">we are open 9am to 6pm , monday to saturday, if you would like to schedule an apppoinment</p>
+                                <p>with us , please contact us 987-654-321</p>
+                                <div id="body_buttons">
+                                    <button>Let us more about</button>
+                                    <button>Contact us Today</button>
+                                </div>
+                            </div>
+                            <div id="body_para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita id explicabo repellendus totam eius quas dolore error.
+                                    Temporibus quisquam sit labore nihil sapiente magnam autem voluptatem quaerat alias et.
+                                </p>
+                                <br/><br/>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita id explicabo repellendus totam eius quas dolore error.
+                                    Temporibus quisquam sit labore nihil sapiente magnam autem voluptatem quaerat alias et.
+                                </p>
+                                <br/><br/>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita id explicabo repellendus totam eius quas dolore error.
+                                    Temporibus quisquam sit labore nihil sapiente magnam autem voluptatem quaerat alias et.
+                                </p>
+                            </div>
+                        </div>
+
+            // Footer Section
+            let footer =<div id="footer_line">
+                            <hr/>
+                            <h1>Family Wellness Massage Therapy</h1>
+                            <p>9874 main street, suite 123,mainland ,</p>
+                            <p>phone: 98746633</p>  
+                            <div id="copyright">Copyright 2018, <a href="#">website.com.</a> all Rights Reserved</div>
+                            <p id="last_footer">Powred <a href="#">bywebsite.com</a></p>
+                        </div>
+
+        const elements = [header, body, footer];
+	    ReactDOM.render(elements, document.getElementById("root"));
+    </script>
+</body>
+</html>

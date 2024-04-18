@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+#head{
+    /* background-color: red; */
+    background-image: linear-gradient(to right, rgb(148, 189, 126) , #db5690);
+    padding: 0.5rem 0px 0.5rem 1rem;
+}
+#head h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Header */
+navbar{
+    display: flex;
+    background-color: rgb(130, 133, 132);
+    justify-content: space-evenly;
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 17px;
+}
+navbar p:first-child{
+    background-color: #ab1355;
+    color: white;
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 20%;
+}
+navbar p{
+    /* background-color: rgb(139, 141, 139); */
+    color: white;
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 20%;
+}
+
+
+
+/* Banner Body */
+#banner{
+    /* display: flex; */
+    /* background-color: red; */
+    width: 100%;
+    /* height: 10px; */
+}
+#banner img{
+    width: 100%;
+}
+#body1{
+    background-color: #ab1355;
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* height: 200px; */
+    /* margin-bottom: 4rem; */
+}
+#body1_p{
+    margin-top: 2rem;
+}
+#body_buttons{
+    /* background-color: aqua; */
+    margin-top: 2rem;    
+}
+#body_buttons button{
+    margin-right: 10px;
+    padding: 1rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+#body_para{
+    padding: 2rem;
+}
+#footer_line{
+    text-align: center;
+}
+#footer_line h1{
+    margin-top: 2rem;
+}
+#footer_line h1{
+    color: #ab1355;
+}
+#copyright{
+    background-color: rgb(161, 157, 161);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-top: 2rem;
+}
+#last_footer{
+    padding: 1rem;
+}
+
+#icon_stack{
+    background-color: black;
+    display: none;
+}
+/* #Media Query for responsiveness */
+@media(max-width:800px){
+    #menu1,#menu2,#menu3,#menu4{
+        display: none;
+    }
+    #icon_stack{
+        display: block;
+        height: 100%;
+        align-self: center;
+        background-color: #ab1355;
+        margin-right: 20px;
+    }
+    navbar{
+        background-color: #ab1355;
+    }
+    navbar p:first-child{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
